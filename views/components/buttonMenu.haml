@@ -1,0 +1,32 @@
+.buttonMenu
+	%a{:href => "#"}
+		File
+		.menu
+			%ul
+				%li New Post
+				%li Edit Post
+				%li Delete Post
+	%a{:href => "#"}
+		Tags
+		.menu
+			%input{:type=>"text",:title=>"add a tag",:size => "8"}
+			%ul
+			- ul = (1...6)
+			- ul.each do |li|
+				%h4 tag name
+	%a{:href => "#"}
+		Visibility
+		.menu
+			%ul
+				%li Everybody
+				%li Executive Only
+				%li Connections Only
+				%li Private
+	%a{:href => "#"}
+		Export
+		.menu
+			%ul
+				%li Pdf File
+				%li Word Document
+				%li Send by Email
+				%li Send to Connection

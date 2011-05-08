@@ -1,0 +1,33 @@
+
+	
+
+#leftColumn
+	.list
+		%h4
+			%img{:src=>"/images/empresas85/rodco.png"}
+		%h4 Roberto Rodriguez
+		%h4.light
+			Incompany Solutions
+	.divider
+		%h3.sectionTitle Menu
+		.list
+			%h4 About Me
+			%h4 My Work
+			%h4 My Customers
+			%h6 
+				%a{:href => "#"} new co-worker
+
+	%h3.sectionTitle Contacts
+	.list
+		- ul = (1...10)
+		- ul.each do |li|
+			%h4 
+				Hilarius Harlem
+
+#centerColumn
+	= render_file('components/PostEditor')
+	= render_file('components/SlideViewer')
+
+
+#rightColumn
+ 

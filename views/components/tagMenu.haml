@@ -1,0 +1,7 @@
+%h3 Tag that define your stand
+%h4 tags are automatically added from Presentations and other Sources
+%input{:type=>"text",:title=>"Type a new tag(word)",:size=>"25"}
+%ul.tags
+	-ul = (1...10)
+	- ul.each do |li|
+		%h4 tag name

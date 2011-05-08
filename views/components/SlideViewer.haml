@@ -1,0 +1,77 @@
+#postView
+	%h3#title Home
+		
+	.createPresentation
+		%h5 
+			We organize our information in presentations.
+			%a Recent
+			%a Top 5
+			%a Most Viewed
+
+		#linearContents
+		#wait
+			%h1 A loading icon should appear
+
+:javascript
+	
+	function showWait(){
+			$('#wait').show();
+			$('#linearContents').hide();
+	}
+
+	function showSlides(){
+			$('#wait').hide(100);
+			$('#linearContents').show(300);
+	}
+	
+	function showNext(){
+		$('#wait').show();
+		$('#linearContents').hide();
+	}
+	
+
+	$(document).ready(function() {
+		Slide.bind("refreshSlides", function() {
+			refreshView();
+		})
+	});
+
+	function refreshView(){
+		var slides = Slide.sortBy('createdDate').all();
+		$('#linearContents').html('');
+		
+		$.each(slides, function(i, item) {
+			app.partial('/templates/regularSlide_c.html.erb', {item: item,index: i}, function(html) {
+				$('#linearContents').append(html);
+			});
+		});
+		
+		showSlides();
+		
+	}
+	
+	function onremove_clickHandler(event){
+		showWait();
+		var target = $(event.currentTarget);
+		var id = target.attr('data-id');
+		app.trigger('Slide_Delete',{id: id})
+	}
+	
+	function onmore_clickHandler(event){
+		showNext();
+		var target = $(event.currentTarget);
+		var id = target.attr('data-id');
+		var lastId = target.attr('data-parent-id');
+		
+		currentSlideId = id;
+		lastSlideId = lastId;
+		lastSlideName = $('#postView #title').html();
+		$('#postView #title').html(target.attr('data-name') + '<a class="smallButton" onclick="onless_clickHandler(event)"> < </a>');	
+		app.trigger('Slide_Get')
+	}
+	
+	function onless_clickHandler(event){
+		currentSlideId = lastSlideId;
+		$('#postView #title').html(lastSlideName);	
+		app.trigger('Slide_Get');
+	}

@@ -1,0 +1,18 @@
+<div class="presentation">
+<div class="feed oneLine">
+	<h3><%= item.attr('post_title') %> 
+		<a data-id="<%= item.attr('_id').$oid %>" onclick="onremove_clickHandler(event)" class="smallButton">x</a>
+		<a data-name="<%= item.attr('post_title') %>" data-id="<%= item.attr('_id').$oid %>" data-parent-id="<%= currentSlideId %>" onclick="onmore_clickHandler(event)" class="smallButton">></a>
+	</h3>
+	<div class="version">
+		<h6> Edited by: Roberto</h6>
+		<h6> <%= item.attr('createdDate') %></h6>
+	</div>
+	<div class="imageBox m">
+		<img src="<%= item.attr('image') %>"/>
+	</div>
+			<ul> 
+				<%= item.attr('lines') %>
+			</ul>
+</div>
+ </div>

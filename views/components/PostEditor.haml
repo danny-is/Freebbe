@@ -1,0 +1,82 @@
+#postEdit
+	%input{:id=>"txt_post_title",:data_event_name=>"create_post",:type=>"text",:title=>"Write Something",:size=>"50",:onchange=>"onChange_txt_post_title(event)"}
+	#details
+		#editableContent
+			.image
+			.lines
+			.options	
+				.option{:onclick=>"addLine()"} Add another line
+				.option{:onclick=>"addImage()"} Add an Image
+ 
+		#save.button{:onclick=>"postEdit_save()"} Guardar
+		#cancel.button{:onclick=>"postEdit_cancel()"} Cancelar
+
+:javascript
+	$(document).ready(function() {
+		$('#postEdit #details').hide();
+	});
+
+	function postEdit_resetValues(){
+		$('#txt_post_body').val('');
+		$('#txt_post_title').val('');
+		$('#postEdit #details').hide();
+		$('#postEdit .lines').html('');
+		$('#postEdit .image').html('');
+	}
+
+	function postEdit_save(event){
+		var title = $('#txt_post_title').val();
+		var image = $('#image img').attr('src');
+		lines=[];
+		$('#postEdit .lines textarea').each(function (){
+			lines.push($(this).val());
+		});
+		
+		app.trigger('Slide_Create',{post_title: title,lines: lines,image: image ,siteId: siteId,parentIds: [currentSlideId]});
+		postEdit_resetValues();
+	}
+
+	function postEdit_cancel(event){
+		postEdit_resetValues();
+	}
+
+	function onChange_txt_post_title(event){
+		$('#postEdit #details').show();
+		addLine();
+	}
+	
+	function addImage(){
+		var image = '<img src="#" />';
+		image += '<a onclick="uploadImage(event);" data-type="file" class="option small">Upload a File</a>'
+		image += '<a onclick="uploadImage(event);" data-type="gallery" class="option small">In Gallery</a>'
+		image += '<a onclick="uploadImage(event);" data-type="facebook" class="option small">In Facebook</a>'
+
+	$('#postEdit .image').html(image);
+		adjustItemsWithImage();
+	}
+	
+	function adjustItemsWithImage(){
+		var isImage =$('#postEdit .image').html(); 
+		if(isImage!=''){
+			$('#postEdit .lines textarea').attr('cols',41);
+		}
+			var lineHeight = $('#postEdit .lines').height();
+		
+			$('#postEdit .image').css('height',lineHeight);
+	}
+	
+	function addLine(){
+		var input = '<textarea class="post_body_line" cols="50" title="write your text here" type="text"></textarea>';
+		input += '<div onclick="removeLine(event)" class="smallButton close">X</div> ';
+		$('#postEdit .lines').append(input);
+		adjustItemsWithImage();	
+	}
+	
+	function removeLine(event){
+		if( $('.lines div, .lines textarea').size() > 2){ 
+			var target = event.currentTarget;
+			$(target).prev().remove();
+			$(target).remove();
+			adjustItemsWithImage();
+		}
+	}

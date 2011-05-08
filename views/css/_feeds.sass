@@ -1,0 +1,49 @@
+@import colors
+ 
+
+.feed
+	+clearfix
+	position: relative
+	&.oneLine
+		border-bottom: 1px dotted #efefef
+		margin-bottom: 10px
+	&.twoLine
+		+grid(5)
+		+alpha
+		+omega
+		height: 100px
+	&.grid
+		+grid(3)
+		height: 100px
+
+	.imageBox
+		+grid-unit-base
+		background-color: #fff
+		border: 1px #efefef solid
+		margin-right: 5px
+		margin-left: 0px
+	.xs
+		width: 35px
+		height: 35px
+	.s
+		width: 55px
+		height: 55px
+	.m
+		width: 85px
+		height: 85px
+	.l
+		width: 135px
+		height: 135px
+	h3
+		font-size: 14px
+	h4
+		font-size: 13px
+	h5
+		font-size: 12px
+	ul 
+		+grid-unit-base
+		li
+			font-family: 'Raleway',Verdana
+			font-size: 11px
+			margin: 8px
+			color: $greyDarkest

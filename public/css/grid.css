@@ -1,0 +1,667 @@
+/* line 14, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 18, ../../views/css/_text.sass */
+#logo a {
+  text-decoration: none;
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+/* line 24, ../../views/css/_text.sass */
+a {
+  font-family: "Raleway", Verdana;
+  text-decoration: none;
+  color: #ff9933;
+  font-size: 10px;
+}
+
+/* line 29, ../../views/css/_text.sass */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 31, ../../views/css/_text.sass */
+h1 {
+  color: #3fa9f5;
+  font-size: 34px;
+  font-family: "Raleway", Verdana;
+}
+
+/* line 36, ../../views/css/_text.sass */
+h2 {
+  color: #777777;
+  font-size: 34px;
+  font-family: "Raleway", Verdana;
+}
+
+/* line 41, ../../views/css/_text.sass */
+h3 {
+  color: #3fa9f5;
+  font-size: 20px;
+  font-family: "Raleway", Verdana;
+}
+
+/* line 47, ../../views/css/_text.sass */
+h4 {
+  color: #777777;
+  font-size: 13px;
+  font-family: "Expletus Sans", Verdana;
+}
+
+/* line 52, ../../views/css/_text.sass */
+h5 {
+  color: #777777;
+  font-size: 12px;
+  font-family: "Raleway", Verdana;
+}
+
+/* line 57, ../../views/css/_text.sass */
+h6 {
+  color: #777777;
+  font-size: 11px;
+  font-family: Arial;
+}
+
+/* line 62, ../../views/css/_text.sass */
+h1.pageTitle {
+  color: #3fa9f5;
+}
+
+/* line 64, ../../views/css/_text.sass */
+h4.pageTitle {
+  color: #777777;
+  width: 450px;
+  margin-bottom: 10px;
+}
+
+/* line 71, ../../views/css/_text.sass */
+h1.sectionTitle {
+  color: #3fa9f5;
+}
+
+/* line 73, ../../views/css/_text.sass */
+.home {
+  margin-top: 30px;
+}
+
+/* line 75, ../../views/css/_text.sass */
+h2.sectionTitle {
+  font-size: 16px;
+}
+
+/* line 77, ../../views/css/_text.sass */
+h3.sectionTitle {
+  margin-top: 8px;
+  overflow: hidden;
+  height: 20px;
+}
+
+/* line 81, ../../views/css/_text.sass */
+h4.sectionTitle {
+  color: #777777;
+}
+
+/* line 83, ../../views/css/_text.sass */
+h6.sectionTitle {
+  padding-right: 14px;
+}
+
+/* line 87, ../../views/css/_text.sass */
+.list h4 {
+  padding-top: 3px;
+}
+/* line 91, ../../views/css/_text.sass */
+.list h5 {
+  color: black;
+  padding-bottom: 2px;
+}
+/* line 94, ../../views/css/_text.sass */
+.list h6 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* line 99, ../../views/css/_text.sass */
+h4.light {
+  font-family: "Raleway", Verdana;
+  color: #333333;
+}
+
+/* line 103, ../../views/css/_text.sass */
+h4.info {
+  padding: 5px;
+}
+
+/* line 8, ../../views/css/_forms.sass */
+.button {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: -1940px;
+  padding: 9px;
+  background-color: #333333;
+  color: white;
+  float: right;
+  cursor: pointer;
+}
+
+/* line 17, ../../views/css/_forms.sass */
+.smallButton {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  background-color: #333333;
+  color: white;
+  cursor: pointer;
+  float: right;
+  margin-top: 8px;
+  margin-right: 10px;
+}
+
+/* line 27, ../../views/css/_forms.sass */
+.option {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #3fa9f5;
+}
+/* line 30, ../../views/css/_forms.sass */
+.option.small {
+  font-size: 11px;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 2px;
+}
+
+/* line 39, ../../views/css/_forms.sass */
+label {
+  font-weight: bold;
+}
+
+/* line 41, ../../views/css/_forms.sass */
+fieldset {
+  padding: 1.4em;
+  margin: 0 0 1.5em 0;
+}
+
+/* line 44, ../../views/css/_forms.sass */
+legend {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* line 48, ../../views/css/_forms.sass */
+input.text, input.title, input[type=email], input[type=text], input[type=password] {
+  margin: 0.5em 0;
+  background-color: white;
+  padding: 5px;
+}
+/* line 56, ../../views/css/_forms.sass */
+input.title {
+  font-size: 1.5em;
+}
+/* line 58, ../../views/css/_forms.sass */
+input[type=checkbox], input.checkbox, input[type=radio], input.radio {
+  position: relative;
+  top: 0.25em;
+}
+
+/* line 64, ../../views/css/_forms.sass */
+textarea {
+  margin: 0.5em 0;
+  padding: 5px;
+}
+
+/* line 67, ../../views/css/_forms.sass */
+select {
+  margin: 0.5em 0;
+}
+
+/* line 69, ../../views/css/_forms.sass */
+fieldset {
+  border: 1px solid #cccccc;
+}
+
+/* line 71, ../../views/css/_forms.sass */
+input.text, input.title, input[type=email], input[type=text], input[type=password], textarea, select {
+  height: 30px;
+  margin-top: 1px;
+  color: #3fa9f5;
+  font-size: 20px;
+  padding-left: 8px;
+  background-color: #efefef;
+  border: none;
+  -webkit-border-radius: 2px 3px;
+  -moz-border-radius: 2px 5px / 3px 6px;
+  -o-border-radius: 2px 5px / 3px 6px;
+  -ms-border-radius: 2px 5px / 3px 6px;
+  -khtml-border-radius: 2px 5px / 3px 6px;
+  border-radius: 2px 5px / 3px 6px;
+}
+/* line 80, ../../views/css/_forms.sass */
+input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:focus, input[type=password]:focus, textarea:focus, select:focus {
+  border: 2px solid #3fa9f5;
+}
+
+/* line 84, ../../views/css/_forms.sass */
+.post_body_line {
+  height: 30px;
+  margin-top: 1px;
+  color: #3fa9f5;
+  font-size: 15px;
+  max-width: 490px;
+}
+
+/* line 3, ../../views/css/_presentation.sass */
+#postEdit {
+  overflow: hidden;
+  *zoom: 1;
+  margin-right: 30px;
+  border-bottom: #efefef 1px solid;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+/* line 10, ../../views/css/_presentation.sass */
+#postEdit #details #editableContent {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 12, ../../views/css/_presentation.sass */
+#postEdit #details #editableContent .lines {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 14, ../../views/css/_presentation.sass */
+#postEdit #details #editableContent .image {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  min-height: 115px;
+  max-width: 80px;
+}
+/* line 18, ../../views/css/_presentation.sass */
+#postEdit #details #editableContent .image img {
+  width: 80px;
+  height: 80px;
+  background-color: #333333;
+  display: block;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 26, ../../views/css/_presentation.sass */
+#postView {
+  overflow: hidden;
+}
+/* line 28, ../../views/css/_presentation.sass */
+#postView h3 {
+  font-size: 20px;
+}
+/* line 30, ../../views/css/_presentation.sass */
+#postView .createPresentation {
+  margin-top: 8px;
+  margin-right: 20px;
+  padding-top: 5px;
+  border-top: solid 1px #888888;
+}
+/* line 35, ../../views/css/_presentation.sass */
+#postView .createPresentation h2 {
+  font-size: 17px;
+}
+/* line 37, ../../views/css/_presentation.sass */
+#postView .createPresentation h5 a {
+  font-size: 15px;
+}
+/* line 40, ../../views/css/_presentation.sass */
+#postView #wait {
+  margin: 80px;
+  height: 200px;
+  width: 200px;
+  background-color: #efefef;
+  border: 1px solid #afafaf;
+  position: relative;
+  left: 600px;
+}
+/* line 48, ../../views/css/_presentation.sass */
+#postView #linearContents {
+  position: relative;
+  margin: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* line 54, ../../views/css/_presentation.sass */
+#postView #linearContents .presentation {
+  position: relative;
+}
+/* line 56, ../../views/css/_presentation.sass */
+#postView #linearContents .presentation .feed {
+  margin-left: 15px;
+}
+/* line 58, ../../views/css/_presentation.sass */
+#postView #linearContents .presentation h3 {
+  margin-top: 14px;
+  position: relative;
+  line-height: 18px;
+  border-bottom: 1px #efefef solid;
+}
+/* line 63, ../../views/css/_presentation.sass */
+#postView #linearContents .presentation .version {
+  font-family: "Raleway", Verdana;
+  margin-bottom: 7px;
+}
+/* line 66, ../../views/css/_presentation.sass */
+#postView #linearContents .presentation .version h6 {
+  display: inline;
+  border-right: 1px solid #999999;
+  padding-right: 7px;
+  color: #999999;
+}
+/* line 71, ../../views/css/_presentation.sass */
+#postView #linearContents .presentation .feed {
+  overflow: hidden;
+  *zoom: 1;
+  position: relative;
+}
+/* line 74, ../../views/css/_presentation.sass */
+#postView #linearContents .presentation .feed.oneLine {
+  border-bottom: 1px dotted #efefef;
+  margin-bottom: 10px;
+}
+/* line 77, ../../views/css/_presentation.sass */
+#postView #linearContents .presentation .feed.twoLine {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 232px;
+  margin-left: 0;
+  margin-right: 0;
+  height: 100px;
+}
+/* line 82, ../../views/css/_presentation.sass */
+#postView #linearContents .presentation .feed.grid {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 136px;
+  height: 100px;
+}
+/* line 87, ../../views/css/_presentation.sass */
+#postView #linearContents .presentation .feed .imageBox {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  border: 1px #efefef solid;
+  margin-right: 5px;
+  margin-left: 0px;
+}
+/* line 93, ../../views/css/_presentation.sass */
+#postView #linearContents .presentation .feed .xs {
+  width: 35px;
+  height: 35px;
+}
+/* line 96, ../../views/css/_presentation.sass */
+#postView #linearContents .presentation .feed .s {
+  width: 55px;
+  height: 55px;
+}
+/* line 99, ../../views/css/_presentation.sass */
+#postView #linearContents .presentation .feed .m {
+  width: 85px;
+  height: 85px;
+}
+/* line 102, ../../views/css/_presentation.sass */
+#postView #linearContents .presentation .feed .l {
+  width: 135px;
+  height: 135px;
+}
+/* line 105, ../../views/css/_presentation.sass */
+#postView #linearContents .presentation .feed h3 {
+  font-size: 14px;
+}
+/* line 107, ../../views/css/_presentation.sass */
+#postView #linearContents .presentation .feed h4 {
+  font-size: 13px;
+}
+/* line 109, ../../views/css/_presentation.sass */
+#postView #linearContents .presentation .feed h5 {
+  font-size: 12px;
+}
+/* line 111, ../../views/css/_presentation.sass */
+#postView #linearContents .presentation .feed ul li {
+  font-family: "Raleway", Verdana;
+  font-size: 11px;
+  margin: 8px;
+  color: #333333;
+}
+/* line 118, ../../views/css/_presentation.sass */
+#postView .buttonMenu {
+  display: none;
+  position: absolute;
+  left: 220px;
+}
+/* line 123, ../../views/css/_presentation.sass */
+#postView .buttonMenu > a {
+  display: inline;
+  position: relative;
+  font-size: 12px;
+  font-weight: bold;
+  background-image: url(/images/pointers/pointer_tooltip_blue.png);
+  background-position: center right;
+  padding: 2px;
+  padding-right: 12px;
+  margin-right: 9px;
+  width: 100px;
+  background-repeat: no-repeat;
+  color: #3fa9f5;
+}
+/* line 136, ../../views/css/_presentation.sass */
+#postView .buttonMenu > a:hoover {
+  text-decoration: underline;
+}
+/* line 140, ../../views/css/_presentation.sass */
+#postView .buttonMenu .menu {
+  border: 1px #3fa9f5 solid;
+  display: none;
+  z-index: 99;
+  background-color: white;
+  position: absolute;
+  left: -999px;
+  padding: 6px 8px;
+  width: 150px;
+}
+/* line 152, ../../views/css/_presentation.sass */
+#postView .buttonMenu .menu h5 {
+  margin-top: 8px;
+}
+/* line 154, ../../views/css/_presentation.sass */
+#postView .buttonMenu .menu .dualSelection {
+  margin-left: 7px;
+}
+/* line 156, ../../views/css/_presentation.sass */
+#postView .buttonMenu .menu .dualSelection a {
+  color: black;
+  display: inline;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* line 5, ../../views/css/grid.sass */
+#headerWrapper {
+  background-color: #777777;
+}
+/* line 7, ../../views/css/grid.sass */
+#headerWrapper #header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  overflow: hidden;
+  *zoom: 1;
+  padding: 5px;
+}
+/* line 11, ../../views/css/grid.sass */
+#headerWrapper #header #logo {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 188px;
+}
+/* line 13, ../../views/css/grid.sass */
+#headerWrapper #header #login {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 572px;
+}
+
+/* line 16, ../../views/css/grid.sass */
+#nav {
+  text-align: right;
+}
+/* line 18, ../../views/css/grid.sass */
+#nav a {
+  font-size: 11px;
+  color: #3fa9f5;
+  margin-right: 8px;
+}
+
+/* line 23, ../../views/css/grid.sass */
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  overflow: hidden;
+  *zoom: 1;
+  min-height: 500px;
+}
+/* line 27, ../../views/css/grid.sass */
+#container #content {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 939px;
+  border-right: 1px solid #999999;
+}
+/* line 32, ../../views/css/grid.sass */
+#container #leftColumn {
+  margin-top: 10px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 159px;
+  margin-right: 0;
+  margin-left: 0;
+  border-right: 1px solid #999999;
+}
+/* line 39, ../../views/css/grid.sass */
+#container #centerColumn {
+  margin-top: 10px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 579px;
+  border-right: 1px solid #999999;
+}
+/* line 44, ../../views/css/grid.sass */
+#container #rightColumn {
+  margin-top: 10px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 159px;
+}
+/* line 48, ../../views/css/grid.sass */
+#container .divider {
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+  padding: 3px 3px 6px 3px;
+  margin: 6px 0px 6px 0px;
+}
+
+/* line 54, ../../views/css/grid.sass */
+#footerWrapper {
+  background-color: #999999;
+}
+/* line 56, ../../views/css/grid.sass */
+#footerWrapper #footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  overflow: hidden;
+  *zoom: 1;
+  padding: 18px;
+}

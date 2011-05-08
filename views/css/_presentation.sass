@@ -1,0 +1,160 @@
+@import colors
+
+#postEdit
+	+clearfix
+	margin-right: 30px
+	border-bottom: $greyLightest 1px solid
+	padding-bottom: 5px
+	margin-bottom: 5px
+	#details
+		#editableContent
+			+clearfix
+			.lines
+				+clearfix
+			.image
+				+grid-unit-base
+				min-height: 115px
+				max-width: 80px
+				img
+					width: 80px
+					height: 80px
+					background-color: #333
+					display: block
+					+clearfix
+
+	
+#postView
+	overflow: hidden
+	h3
+		font-size: 20px
+	.createPresentation
+		margin-top: 8px
+		margin-right: 20px
+		padding-top: 5px
+		border-top: solid 1px #888
+		h2
+			font-size: 17px
+		h5 a
+			font-size: 15px
+
+	#wait
+		margin: 80px
+		height: 200px
+		width: 200px
+		background-color: #efefef
+		border: 1px solid #afafaf
+		position: relative
+		left: 600px
+	#linearContents
+		position: relative
+		margin: 15px
+		margin-left: 10px
+		margin-right: 10px
+		
+		.presentation
+			position: relative
+			.feed
+				margin-left: 15px
+			h3
+				margin-top: 14px
+				position: relative
+				line-height: 18px
+				border-bottom: 1px #efefef solid
+			.version
+				font-family: 'Raleway',Verdana
+				margin-bottom: 7px
+				h6 
+					display: inline
+					border-right: 1px solid $greyLighter
+					padding-right: 7px
+					color: $greyLighter
+			.feed
+				+clearfix
+				position: relative
+				&.oneLine
+					border-bottom: 1px dotted #efefef
+					margin-bottom: 10px
+				&.twoLine
+					+grid(5)
+					+alpha
+					+omega
+					height: 100px
+				&.grid
+					+grid(3)
+					height: 100px
+
+
+				.imageBox
+					+grid-unit-base
+					background-color: #fff
+					border: 1px #efefef solid
+					margin-right: 5px
+					margin-left: 0px
+				.xs
+					width: 35px
+					height: 35px
+				.s
+					width: 55px
+					height: 55px
+				.m
+					width: 85px
+					height: 85px
+				.l
+					width: 135px
+					height: 135px
+				h3
+					font-size: 14px
+				h4
+					font-size: 13px
+				h5
+					font-size: 12px
+				ul li
+					font-family: 'Raleway',Verdana
+					font-size: 11px
+					margin: 8px
+					color: $greyDarkest
+ 
+		
+	.buttonMenu 
+		display: none
+		position: absolute
+		left: 220px 
+		
+		>a
+			display: inline
+			position: relative
+			font-size: 12px
+			font-weight: bold
+			background-image: url(/images/pointers/pointer_tooltip_blue.png)
+			background-position: center right
+			padding: 2px
+			padding-right: 12px
+			margin-right: 9px
+			width: 100px
+			background-repeat: no-repeat
+			color: $blue
+		>a:hoover
+			text-decoration: underline
+
+ 
+		.menu
+			border: 1px $blue solid
+			display: none
+			z-index: 99
+			background-color: #fff
+			position: absolute
+			left: -999px
+			padding: 6px 8px
+
+			width: 150px
+			h4
+
+			h5
+				margin-top: 8px
+			.dualSelection
+				margin-left: 7px
+				a
+					color: #000
+					display: inline
+					font-weight: bold
+					font-size: 13px
