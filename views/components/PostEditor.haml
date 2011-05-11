@@ -26,13 +26,13 @@
 
 	function postEdit_save(event){
 		var title = $('#txt_post_title').val();
-		var image = $('#image img').attr('src');
+		var image = $('.image img').attr('src');
 		lines=[];
 		$('#postEdit .lines textarea').each(function (){
 			lines.push($(this).val());
 		});
 		
-		app.trigger('Slide_Create',{post_title: title,lines: lines,image: image ,siteId: siteId,parentIds: [currentSlideId]});
+		app.trigger('Slide_Create',{post_title: title,lines: lines,image: image });
 		postEdit_resetValues();
 	}
 
@@ -46,7 +46,8 @@
 	}
 	
 	function addImage(){
-		var image = '<img src="#" />';
+		var i = Math.floor(Math.random() * 10);
+		var image = '<img src="/images/demo/' + i + '.png" />';
 		image += '<a onclick="uploadImage(event);" data-type="file" class="option small">Upload a File</a>'
 		image += '<a onclick="uploadImage(event);" data-type="gallery" class="option small">In Gallery</a>'
 		image += '<a onclick="uploadImage(event);" data-type="facebook" class="option small">In Facebook</a>'

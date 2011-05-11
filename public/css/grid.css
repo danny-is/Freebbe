@@ -212,15 +212,17 @@ h4.info {
   margin-left: 10px;
   margin-right: 10px;
   padding: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   background-color: #333333;
   color: white;
   cursor: pointer;
   float: right;
-  margin-top: 8px;
+  margin-top: 0px;
   margin-right: 10px;
 }
 
-/* line 27, ../../views/css/_forms.sass */
+/* line 29, ../../views/css/_forms.sass */
 .option {
   display: inline;
   float: left;
@@ -228,7 +230,7 @@ h4.info {
   margin-right: 10px;
   color: #3fa9f5;
 }
-/* line 30, ../../views/css/_forms.sass */
+/* line 32, ../../views/css/_forms.sass */
 .option.small {
   font-size: 11px;
   display: block;
@@ -237,56 +239,56 @@ h4.info {
   margin-bottom: 2px;
 }
 
-/* line 39, ../../views/css/_forms.sass */
+/* line 41, ../../views/css/_forms.sass */
 label {
   font-weight: bold;
 }
 
-/* line 41, ../../views/css/_forms.sass */
+/* line 43, ../../views/css/_forms.sass */
 fieldset {
   padding: 1.4em;
   margin: 0 0 1.5em 0;
 }
 
-/* line 44, ../../views/css/_forms.sass */
+/* line 46, ../../views/css/_forms.sass */
 legend {
   font-weight: bold;
   font-size: 1.2em;
 }
 
-/* line 48, ../../views/css/_forms.sass */
+/* line 50, ../../views/css/_forms.sass */
 input.text, input.title, input[type=email], input[type=text], input[type=password] {
   margin: 0.5em 0;
   background-color: white;
   padding: 5px;
 }
-/* line 56, ../../views/css/_forms.sass */
+/* line 58, ../../views/css/_forms.sass */
 input.title {
   font-size: 1.5em;
 }
-/* line 58, ../../views/css/_forms.sass */
+/* line 60, ../../views/css/_forms.sass */
 input[type=checkbox], input.checkbox, input[type=radio], input.radio {
   position: relative;
   top: 0.25em;
 }
 
-/* line 64, ../../views/css/_forms.sass */
+/* line 66, ../../views/css/_forms.sass */
 textarea {
   margin: 0.5em 0;
   padding: 5px;
 }
 
-/* line 67, ../../views/css/_forms.sass */
+/* line 69, ../../views/css/_forms.sass */
 select {
   margin: 0.5em 0;
 }
 
-/* line 69, ../../views/css/_forms.sass */
+/* line 71, ../../views/css/_forms.sass */
 fieldset {
   border: 1px solid #cccccc;
 }
 
-/* line 71, ../../views/css/_forms.sass */
+/* line 73, ../../views/css/_forms.sass */
 input.text, input.title, input[type=email], input[type=text], input[type=password], textarea, select {
   height: 30px;
   margin-top: 1px;
@@ -302,12 +304,12 @@ input.text, input.title, input[type=email], input[type=text], input[type=passwor
   -khtml-border-radius: 2px 5px / 3px 6px;
   border-radius: 2px 5px / 3px 6px;
 }
-/* line 80, ../../views/css/_forms.sass */
+/* line 82, ../../views/css/_forms.sass */
 input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:focus, input[type=password]:focus, textarea:focus, select:focus {
   border: 2px solid #3fa9f5;
 }
 
-/* line 84, ../../views/css/_forms.sass */
+/* line 86, ../../views/css/_forms.sass */
 .post_body_line {
   height: 30px;
   margin-top: 1px;
@@ -361,23 +363,24 @@ input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:f
 /* line 28, ../../views/css/_presentation.sass */
 #postView h3 {
   font-size: 20px;
+  cursor: pointer;
 }
-/* line 30, ../../views/css/_presentation.sass */
+/* line 31, ../../views/css/_presentation.sass */
 #postView .createPresentation {
   margin-top: 8px;
   margin-right: 20px;
   padding-top: 5px;
   border-top: solid 1px #888888;
 }
-/* line 35, ../../views/css/_presentation.sass */
+/* line 36, ../../views/css/_presentation.sass */
 #postView .createPresentation h2 {
   font-size: 17px;
 }
-/* line 37, ../../views/css/_presentation.sass */
+/* line 38, ../../views/css/_presentation.sass */
 #postView .createPresentation h5 a {
   font-size: 15px;
 }
-/* line 40, ../../views/css/_presentation.sass */
+/* line 41, ../../views/css/_presentation.sass */
 #postView #wait {
   margin: 80px;
   height: 200px;
@@ -387,52 +390,52 @@ input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:f
   position: relative;
   left: 600px;
 }
-/* line 48, ../../views/css/_presentation.sass */
+/* line 49, ../../views/css/_presentation.sass */
 #postView #linearContents {
   position: relative;
   margin: 15px;
   margin-left: 10px;
   margin-right: 10px;
 }
-/* line 54, ../../views/css/_presentation.sass */
+/* line 55, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation {
   position: relative;
 }
-/* line 56, ../../views/css/_presentation.sass */
+/* line 57, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed {
   margin-left: 15px;
 }
-/* line 58, ../../views/css/_presentation.sass */
+/* line 59, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation h3 {
   margin-top: 14px;
   position: relative;
   line-height: 18px;
   border-bottom: 1px #efefef solid;
 }
-/* line 63, ../../views/css/_presentation.sass */
+/* line 64, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .version {
   font-family: "Raleway", Verdana;
   margin-bottom: 7px;
 }
-/* line 66, ../../views/css/_presentation.sass */
+/* line 67, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .version h6 {
   display: inline;
   border-right: 1px solid #999999;
   padding-right: 7px;
   color: #999999;
 }
-/* line 71, ../../views/css/_presentation.sass */
+/* line 72, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed {
   overflow: hidden;
   *zoom: 1;
   position: relative;
 }
-/* line 74, ../../views/css/_presentation.sass */
+/* line 75, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed.oneLine {
   border-bottom: 1px dotted #efefef;
   margin-bottom: 10px;
 }
-/* line 77, ../../views/css/_presentation.sass */
+/* line 78, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed.twoLine {
   display: inline;
   float: left;
@@ -443,7 +446,7 @@ input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:f
   margin-right: 0;
   height: 100px;
 }
-/* line 82, ../../views/css/_presentation.sass */
+/* line 83, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed.grid {
   display: inline;
   float: left;
@@ -452,7 +455,7 @@ input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:f
   width: 136px;
   height: 100px;
 }
-/* line 87, ../../views/css/_presentation.sass */
+/* line 88, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed .imageBox {
   display: inline;
   float: left;
@@ -463,52 +466,52 @@ input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:f
   margin-right: 5px;
   margin-left: 0px;
 }
-/* line 93, ../../views/css/_presentation.sass */
+/* line 94, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed .xs {
   width: 35px;
   height: 35px;
 }
-/* line 96, ../../views/css/_presentation.sass */
+/* line 97, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed .s {
   width: 55px;
   height: 55px;
 }
-/* line 99, ../../views/css/_presentation.sass */
+/* line 100, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed .m {
   width: 85px;
   height: 85px;
 }
-/* line 102, ../../views/css/_presentation.sass */
+/* line 103, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed .l {
   width: 135px;
   height: 135px;
 }
-/* line 105, ../../views/css/_presentation.sass */
+/* line 106, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed h3 {
   font-size: 14px;
 }
-/* line 107, ../../views/css/_presentation.sass */
+/* line 108, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed h4 {
   font-size: 13px;
 }
-/* line 109, ../../views/css/_presentation.sass */
+/* line 110, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed h5 {
   font-size: 12px;
 }
-/* line 111, ../../views/css/_presentation.sass */
+/* line 112, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed ul li {
   font-family: "Raleway", Verdana;
   font-size: 11px;
   margin: 8px;
   color: #333333;
 }
-/* line 118, ../../views/css/_presentation.sass */
+/* line 119, ../../views/css/_presentation.sass */
 #postView .buttonMenu {
   display: none;
   position: absolute;
   left: 220px;
 }
-/* line 123, ../../views/css/_presentation.sass */
+/* line 124, ../../views/css/_presentation.sass */
 #postView .buttonMenu > a {
   display: inline;
   position: relative;
@@ -523,11 +526,11 @@ input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:f
   background-repeat: no-repeat;
   color: #3fa9f5;
 }
-/* line 136, ../../views/css/_presentation.sass */
+/* line 137, ../../views/css/_presentation.sass */
 #postView .buttonMenu > a:hoover {
   text-decoration: underline;
 }
-/* line 140, ../../views/css/_presentation.sass */
+/* line 141, ../../views/css/_presentation.sass */
 #postView .buttonMenu .menu {
   border: 1px #3fa9f5 solid;
   display: none;
@@ -538,15 +541,15 @@ input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:f
   padding: 6px 8px;
   width: 150px;
 }
-/* line 152, ../../views/css/_presentation.sass */
+/* line 153, ../../views/css/_presentation.sass */
 #postView .buttonMenu .menu h5 {
   margin-top: 8px;
 }
-/* line 154, ../../views/css/_presentation.sass */
+/* line 155, ../../views/css/_presentation.sass */
 #postView .buttonMenu .menu .dualSelection {
   margin-left: 7px;
 }
-/* line 156, ../../views/css/_presentation.sass */
+/* line 157, ../../views/css/_presentation.sass */
 #postView .buttonMenu .menu .dualSelection a {
   color: black;
   display: inline;

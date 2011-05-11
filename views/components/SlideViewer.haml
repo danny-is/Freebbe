@@ -41,9 +41,14 @@
 		$('#linearContents').html('');
 		
 		$.each(slides, function(i, item) {
-			app.partial('/templates/regularSlide_c.html.erb', {item: item,index: i}, function(html) {
+			app.partial('/templates/regularSlide_e.html.erb', {item: item,index: i}, function(html) {
 				$('#linearContents').append(html);
 			});
+		});
+		
+		$('#linearContents .presentation').each(function(){
+			h=$(this).find('ul').height();
+			$(this).find('.imageBox').height(h);
 		});
 		
 		showSlides();
@@ -67,6 +72,7 @@
 		lastSlideId = lastId;
 		lastSlideName = $('#postView #title').html();
 		$('#postView #title').html(target.attr('data-name') + '<a class="smallButton" onclick="onless_clickHandler(event)"> < </a>');	
+		
 		app.trigger('Slide_Get')
 	}
 	

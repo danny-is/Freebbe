@@ -1,6 +1,6 @@
 var app;
-var siteId='';
-var currentSlideId='';
+var siteId='rodcocr';
+var currentSlideId='root';
 var lastSlideId='';
 var lastSlideName='';
 

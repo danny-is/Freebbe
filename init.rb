@@ -4,11 +4,18 @@ require 'haml'
 require 'ninesixty'
 require 'json'
 require 'model/Frebbe'
+require 'system_timer'
 
-before do
-  Frebbe.connect(:server=> 'localhost',:db=> 'frebbe')
+
+configure :production  do
+ 
+    Frebbe.connectUrl
 end
 
+configure :development  do
+  Frebbe.connect(:server=> 'localhost',:db=> 'frebbe')
+
+end 
 
 get '/' do
  haml :index  
@@ -29,12 +36,13 @@ post '/slide' do
   opp = URI.decode(data)
   opp1 =JSON.parse(opp)
   return Frebbe.insert(opp1).to_json
-
 end
 
-get '/slide/:id' do
-  id = params[:id]
-  return Frebbe.delete(id)
+get '/slide/delete' do
+  itemId = params['itemId']
+  parentId = params['parentId']
+  
+  return Frebbe.delete(itemId,parentId)
 end
 
 def render_file(filename)
