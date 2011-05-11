@@ -327,17 +327,21 @@ input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:f
   padding-bottom: 5px;
   margin-bottom: 5px;
 }
-/* line 10, ../../views/css/_presentation.sass */
+/* line 9, ../../views/css/_presentation.sass */
+#postEdit #details {
+  display: none;
+}
+/* line 11, ../../views/css/_presentation.sass */
 #postEdit #details #editableContent {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 12, ../../views/css/_presentation.sass */
+/* line 13, ../../views/css/_presentation.sass */
 #postEdit #details #editableContent .lines {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 14, ../../views/css/_presentation.sass */
+/* line 15, ../../views/css/_presentation.sass */
 #postEdit #details #editableContent .image {
   display: inline;
   float: left;
@@ -346,7 +350,7 @@ input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:f
   min-height: 115px;
   max-width: 80px;
 }
-/* line 18, ../../views/css/_presentation.sass */
+/* line 19, ../../views/css/_presentation.sass */
 #postEdit #details #editableContent .image img {
   width: 80px;
   height: 80px;
@@ -356,31 +360,31 @@ input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:f
   *zoom: 1;
 }
 
-/* line 26, ../../views/css/_presentation.sass */
+/* line 27, ../../views/css/_presentation.sass */
 #postView {
   overflow: hidden;
 }
-/* line 28, ../../views/css/_presentation.sass */
+/* line 29, ../../views/css/_presentation.sass */
 #postView h3 {
   font-size: 20px;
   cursor: pointer;
 }
-/* line 31, ../../views/css/_presentation.sass */
+/* line 32, ../../views/css/_presentation.sass */
 #postView .createPresentation {
   margin-top: 8px;
   margin-right: 20px;
   padding-top: 5px;
   border-top: solid 1px #888888;
 }
-/* line 36, ../../views/css/_presentation.sass */
+/* line 37, ../../views/css/_presentation.sass */
 #postView .createPresentation h2 {
   font-size: 17px;
 }
-/* line 38, ../../views/css/_presentation.sass */
+/* line 39, ../../views/css/_presentation.sass */
 #postView .createPresentation h5 a {
   font-size: 15px;
 }
-/* line 41, ../../views/css/_presentation.sass */
+/* line 42, ../../views/css/_presentation.sass */
 #postView #wait {
   margin: 80px;
   height: 200px;
@@ -388,7 +392,6 @@ input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:f
   background-color: #efefef;
   border: 1px solid #afafaf;
   position: relative;
-  left: 600px;
 }
 /* line 49, ../../views/css/_presentation.sass */
 #postView #linearContents {
