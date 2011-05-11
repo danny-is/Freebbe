@@ -392,7 +392,7 @@ input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:f
   background-color: #efefef;
   border: 1px solid #afafaf;
   position: relative;
-  padding: 0px;
+  padding: 20px;
 }
 /* line 50, ../../views/css/_presentation.sass */
 #postView #linearContents {
