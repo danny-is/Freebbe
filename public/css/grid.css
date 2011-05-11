@@ -388,7 +388,7 @@ input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:f
 #postView #wait {
   margin: 80px;
   height: 200px;
-  width: 200px;
+  width: 400px;
   background-color: #efefef;
   border: 1px solid #afafaf;
   position: relative;

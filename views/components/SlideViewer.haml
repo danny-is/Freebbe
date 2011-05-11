@@ -73,6 +73,8 @@
 	}
 	
 	function onless_clickHandler(event){
+	showWait();
+	
 		currentSlideId = lastSlideId;
 		$('#postView #title').html(lastSlideName);	
 		app.trigger('Slide_Get');
