@@ -26,12 +26,10 @@
 
 	function postEdit_save(event){
 		var title = $('#txt_post_title').val();
-		title = encodeURIComponent(title);
 		var image = $('.image img').attr('src');
 		lines=[];
 		$('#postEdit .lines textarea').each(function (){
-			var enc = encodeURIComponent($(this).val());
-			lines.push(enc);
+			lines.push($(this).val());
 		});
 		
 		app.trigger('Slide_Create',{post_title: title,lines: lines,image: image });

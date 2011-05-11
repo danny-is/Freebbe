@@ -66,7 +66,15 @@ $.sammy('body', function(){
 	
 	this.bind('Slide_Create', function(e,data) {
 		var context = this;
-		var slide = {post_title: data['post_title'],lines: data['lines'],image: data['image'] , siteId: siteId,parentIds: getCurrentSlideId()}
+		var title = data['post_title'].replace(/"/g,"'");
+		title = encodeURIComponent(title);
+		var lines = data['lines']
+		for(i in lines){
+			var str = lines[i].replace(/"/g,"'")
+			str = encodeURIComponent(str);
+			lines[i] = str;
+		}
+		var slide = {post_title: title,lines: lines ,image: data['image'] , siteId: siteId,parentIds: getCurrentSlideId()}
 		var j = app.json(slide);
 		$.ajax({
 			url: "/slide",
