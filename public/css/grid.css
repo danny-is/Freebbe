@@ -386,60 +386,61 @@ input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:f
 }
 /* line 42, ../../views/css/_presentation.sass */
 #postView #wait {
-  margin: 80px;
-  height: 200px;
-  width: 400px;
-  background-color: #efefef;
+  margin-left: 130px;
+  margin-top: 50px;
+  height: 50px;
+  width: 50px;
+  background-color: #f9f9f9;
   border: 1px solid #afafaf;
   position: relative;
-  padding: 20px;
+  padding: 80px;
 }
-/* line 50, ../../views/css/_presentation.sass */
+/* line 51, ../../views/css/_presentation.sass */
 #postView #linearContents {
   position: relative;
   margin: 15px;
   margin-left: 10px;
   margin-right: 10px;
 }
-/* line 56, ../../views/css/_presentation.sass */
+/* line 57, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation {
   position: relative;
 }
-/* line 58, ../../views/css/_presentation.sass */
+/* line 59, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed {
   margin-left: 15px;
 }
-/* line 60, ../../views/css/_presentation.sass */
+/* line 61, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation h3 {
   margin-top: 14px;
   position: relative;
   line-height: 18px;
   border-bottom: 1px #efefef solid;
 }
-/* line 65, ../../views/css/_presentation.sass */
+/* line 66, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .version {
   font-family: "Raleway", Verdana;
   margin-bottom: 7px;
 }
-/* line 68, ../../views/css/_presentation.sass */
+/* line 69, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .version h6 {
   display: inline;
   border-right: 1px solid #999999;
   padding-right: 7px;
   color: #999999;
 }
-/* line 73, ../../views/css/_presentation.sass */
+/* line 74, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed {
   overflow: hidden;
   *zoom: 1;
   position: relative;
 }
-/* line 76, ../../views/css/_presentation.sass */
+/* line 77, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed.oneLine {
   border-bottom: 1px dotted #efefef;
   margin-bottom: 10px;
 }
-/* line 79, ../../views/css/_presentation.sass */
+/* line 80, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed.twoLine {
   display: inline;
   float: left;
@@ -450,7 +451,7 @@ input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:f
   margin-right: 0;
   height: 100px;
 }
-/* line 84, ../../views/css/_presentation.sass */
+/* line 85, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed.grid {
   display: inline;
   float: left;
@@ -459,7 +460,7 @@ input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:f
   width: 136px;
   height: 100px;
 }
-/* line 89, ../../views/css/_presentation.sass */
+/* line 90, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed .imageBox {
   display: inline;
   float: left;
@@ -470,52 +471,52 @@ input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:f
   margin-right: 5px;
   margin-left: 0px;
 }
-/* line 95, ../../views/css/_presentation.sass */
+/* line 96, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed .xs {
   width: 35px;
   height: 35px;
 }
-/* line 98, ../../views/css/_presentation.sass */
+/* line 99, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed .s {
   width: 55px;
   height: 55px;
 }
-/* line 101, ../../views/css/_presentation.sass */
+/* line 102, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed .m {
   width: 85px;
   height: 85px;
 }
-/* line 104, ../../views/css/_presentation.sass */
+/* line 105, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed .l {
   width: 135px;
   height: 135px;
 }
-/* line 107, ../../views/css/_presentation.sass */
+/* line 108, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed h3 {
   font-size: 14px;
 }
-/* line 109, ../../views/css/_presentation.sass */
+/* line 110, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed h4 {
   font-size: 13px;
 }
-/* line 111, ../../views/css/_presentation.sass */
+/* line 112, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed h5 {
   font-size: 12px;
 }
-/* line 113, ../../views/css/_presentation.sass */
+/* line 114, ../../views/css/_presentation.sass */
 #postView #linearContents .presentation .feed ul li {
   font-family: "Raleway", Verdana;
   font-size: 11px;
   margin: 8px;
   color: #333333;
 }
-/* line 120, ../../views/css/_presentation.sass */
+/* line 121, ../../views/css/_presentation.sass */
 #postView .buttonMenu {
   display: none;
   position: absolute;
   left: 220px;
 }
-/* line 125, ../../views/css/_presentation.sass */
+/* line 126, ../../views/css/_presentation.sass */
 #postView .buttonMenu > a {
   display: inline;
   position: relative;
@@ -530,11 +531,11 @@ input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:f
   background-repeat: no-repeat;
   color: #3fa9f5;
 }
-/* line 138, ../../views/css/_presentation.sass */
+/* line 139, ../../views/css/_presentation.sass */
 #postView .buttonMenu > a:hoover {
   text-decoration: underline;
 }
-/* line 142, ../../views/css/_presentation.sass */
+/* line 143, ../../views/css/_presentation.sass */
 #postView .buttonMenu .menu {
   border: 1px #3fa9f5 solid;
   display: none;
@@ -545,15 +546,15 @@ input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:f
   padding: 6px 8px;
   width: 150px;
 }
-/* line 154, ../../views/css/_presentation.sass */
+/* line 155, ../../views/css/_presentation.sass */
 #postView .buttonMenu .menu h5 {
   margin-top: 8px;
 }
-/* line 156, ../../views/css/_presentation.sass */
+/* line 157, ../../views/css/_presentation.sass */
 #postView .buttonMenu .menu .dualSelection {
   margin-left: 7px;
 }
-/* line 158, ../../views/css/_presentation.sass */
+/* line 159, ../../views/css/_presentation.sass */
 #postView .buttonMenu .menu .dualSelection a {
   color: black;
   display: inline;
