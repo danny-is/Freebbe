@@ -36,15 +36,18 @@ $.sammy('body', function(){
 	
 	function createSlideFromJSON(p){
 			var slide = new Slide(p);
+			var title = slide.attr('post_title');
+			slide.attr('post_title',decodeURIComponent(title));
 			var lineas = slide.attr('lines');
 			var slides = slide.attr('children');
 			var newVal='';
 			for(ii in lineas){
-				newVal += '<li>' + lineas[ii] + '</li>';
+				var l = decodeURIComponent(lineas[ii]);
+				newVal += '<li>' + l + '</li>';
 			}
+			slide.attr('lines', newVal);
 			if(slides == null || slides == undefined){slides=[];}
 			slide.attr('slides',slides.length)
-			slide.attr('lines', newVal);
 			return slide;
 }
 	
