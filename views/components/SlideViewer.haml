@@ -23,14 +23,10 @@
 			$('#wait').hide(100);
 			$('#linearContents').show(300);
 	}
-	
-	function showNext(){
-		$('#wait').show();
-		$('#linearContents').hide();
-	}
-	
+ 
 
 	$(document).ready(function() {
+	showWait();
 		Slide.bind("refreshSlides", function() {
 			refreshView();
 		})
@@ -63,7 +59,7 @@
 	}
 	
 	function onmore_clickHandler(event){
-		showNext();
+		showWait();
 		var target = $(event.currentTarget);
 		var id = target.attr('data-id');
 		var lastId = target.attr('data-parent-id');
